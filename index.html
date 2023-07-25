@@ -2,14 +2,14 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
     <title>Food Burst</title>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
 
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/c77e6dd1d8.js" crossorigin="anonymous"></script>
@@ -22,18 +22,19 @@
             theme: {
                 extend: {
                     fontFamily: {
-                        lato: ['Lato', 'sans-serif'],
+                        lato: ["Lato", "sans-serif"],
                     },
                     colors: {
-                        themeRedColor: '#F85559',
-                        darkColor: '#121212',
-                        darkLight: 'rgba(18, 18, 18, 0.60)',
-                        darkLightTransparent: 'rgba(18, 18, 18, 0.00)',
-                        darkLightOverlay: 'rgba(255, 137, 56, 0.10)',
-                    }
-                }
-            }
-        }
+                        themeRedColor: "#F85559",
+                        darkColor: "#121212",
+                        darkLight: "rgba(18, 18, 18, 0.60)",
+                        darkLightTransparent: "rgba(18, 18, 18, 0.00)",
+                        darkLightOverlay: "rgba(255, 137, 56, 0.10)",
+                        darkText: "rgba(18, 18, 18, 0.80)",
+                    },
+                },
+            },
+        };
     </script>
 
     <!-- custom css -->
@@ -50,7 +51,7 @@
             <div class="navbar bg-themeRedColor items-center rounded-full justify-between">
                 <div class="hidden lg:block navbar-start">
                     <nav class="ml-12">
-                        <ul class="hidden  md:flex gap-7 text-white">
+                        <ul class="hidden md:flex gap-7 text-white">
                             <li><a class="text-lg font-medium" href="#">Home</a></li>
                             <li><a class="text-lg font-medium" href="#">About Us</a></li>
                             <li><a class="text-lg font-medium" href="#">Shop</a></li>
@@ -61,8 +62,8 @@
                 <div class="navbar-center">
                     <a class="normal-case cursor-pointer">
                         <figure class="flex items-center gap-2">
-                            <img class=" w-10 h-10 md:w-14 md:h-14" src="./img/logo.png" alt="">
-                            <p class="text-white  md:text-[32px] font-bold">Fruit Burst</p>
+                            <img class="w-10 h-10 md:w-14 md:h-14" src="./img/logo.png" alt="" />
+                            <p class="text-white md:text-[32px] font-bold">Fruit Burst</p>
                         </figure>
                     </a>
                 </div>
@@ -78,8 +79,8 @@
                         </span>
 
                         <input type="text"
-                            class="w-full py-2 pl-4 pr-4  text-gray-700 bg-white border rounded-full dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
-                            placeholder="Search here">
+                            class="w-full py-2 pl-4 pr-4 text-gray-700 bg-white border rounded-full dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:outline-none focus:ring focus:ring-opacity-40 focus:ring-blue-300"
+                            placeholder="Search here" />
                     </div>
                     <div class="block lg:hidden">
                         <div class="dropdown">
@@ -92,10 +93,18 @@
                             </label>
                             <ul tabindex="0"
                                 class="menu -left-[165px] menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a class="lg:text-lg lg:font-medium" href="#">Home</a></li>
-                                <li><a class="lg:text-lg lg:font-medium" href="#">About Us</a></li>
-                                <li><a class="lg:text-lg lg:font-medium" href="#">Shop</a></li>
-                                <li><a class="lg:text-lg lg:font-medium" href="#">All Fruits</a></li>
+                                <li>
+                                    <a class="lg:text-lg lg:font-medium" href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a class="lg:text-lg lg:font-medium" href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="lg:text-lg lg:font-medium" href="#">Shop</a>
+                                </li>
+                                <li>
+                                    <a class="lg:text-lg lg:font-medium" href="#">All Fruits</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -105,12 +114,187 @@
     </header>
 
     <main>
+        <section class="text-gray-600 body-font">
+            <div class="container mx-auto">
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full 
+                        bg-[url('./img/banner1.png')] 
+                        bg-cover 
+                        bg-no-repeat
+                        rounded-lg 
+                        after:rounded-lg
+                        duration-200
+                        after:content-[''] 
+                        after:absolute
+                        after:w-full 
+                        after:h-full 
+                        after:bg-gradient-to-b from-darkColor to-darkLightTransparent 
+                        after:opacity-50">
+                        <div class="mx-auto z-50 pt-20 pb-48">
+                            <div class="text-center">
+                                <h2 class="mb-6 text-7xl font-extrabold text-white">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h2>
+                                <p class="text-base md:text-lg text-[#E7E7E7] leading-[26px] font-poppins">
+                                    We supply highly quality organic products
+                                </p>
+                                <a href="#"
+                                    class="inline-block text-xl py-4 px-8 mt-5 normal-case border-0 hover:bg-themeRedColor text-white rounded-lg bg-themeRedColor">Shop
+                                    Now</a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute z-50 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide4" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide2" class="carousel-item relative w-full 
+                        bg-[url('./img/banner2.png')] 
+                        bg-cover 
+                        bg-no-repeat 
+                        rounded-lg 
+                        after:rounded-lg
+                        duration-200
+                        after:content-['']
+                        after:absolute
+                        after:w-full 
+                        after:h-full
+                        after:bg-gradient-to-b from-darkColor to-darkLightTransparent
+                        after:opacity-50">
+                        <div class="mx-auto z-50 pt-20 pb-48">
+                            <div class="text-center">
+                                <h2 class="mb-6 text-7xl font-extrabold text-white">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h2>
+                                <p class="text-base md:text-lg text-[#E7E7E7] leading-[26px] font-poppins">
+                                    We supply highly quality organic products
+                                </p>
+                                <a href="#"
+                                    class="inline-block text-xl py-4 px-8 mt-5 normal-case border-0 hover:bg-themeRedColor text-white rounded-lg bg-themeRedColor">Shop
+                                    Now</a>
+                            </div>
+                        </div>
+                        <div
+                            class="z-50 absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3" class="carousel-item relative w-full 
+                        bg-[url('./img/banner3.png')] 
+                        bg-cover 
+                        bg-no-repeat 
+                        rounded-lg 
+                        after:rounded-lg 
+                        duration-200
+                        after:content-[''] 
+                        after:absolute 
+                        after:w-full 
+                        after:h-full 
+                        after:bg-gradient-to-b from-darkColor to-darkLightTransparent 
+                        after:opacity-50">
+                        <div class="mx-auto z-50 pt-20 pb-48">
+                            <div class="text-center">
+                                <h2 class="mb-6 text-7xl font-extrabold text-white">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h2>
+                                <p class="text-base md:text-lg text-[#E7E7E7] leading-[26px] font-poppins">
+                                    We supply highly quality organic products
+                                </p>
+                                <a href="#"
+                                    class="inline-block text-xl py-4 px-8 mt-5 normal-case border-0 hover:bg-themeRedColor text-white rounded-lg bg-themeRedColor">Shop
+                                    Now</a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute z-50 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide4" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide4" class="carousel-item relative w-full 
+                        bg-[url('./img/banner4.png')] 
+                        bg-cover 
+                        bg-no-repeat 
+                        rounded-lg 
+                        after:rounded-lg
+                        duration-200
+                        after:content-[''] 
+                        after:absolute 
+                        after:w-full 
+                        after:h-full 
+                        after:bg-gradient-to-b from-darkColor to-darkLightTransparent 
+                        after:opacity-50">
+                        <div class="mx-auto z-50 pt-20 pb-48">
+                            <div class="text-center">
+                                <h2 class="mb-6 text-7xl font-extrabold text-white">
+                                    Exotic tastes at your <br />
+                                    doorstep
+                                </h2>
+                                <p class="text-base md:text-lg text-[#E7E7E7] leading-[26px] font-poppins">
+                                    We supply highly quality organic products
+                                </p>
+                                <a href="#"
+                                    class="inline-block text-xl py-4 px-8 mt-5 normal-case border-0 hover:bg-themeRedColor text-white rounded-lg bg-themeRedColor">Shop
+                                    Now</a>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute z-50 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="-mt-28 relative z-50 px-24">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-5 gap-20 bg-white rounded-lg px-16 py-12 shadow-lg ">
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <figure class="">
+                            <img class="w-[144px] h-[112px]" src="./img/fruit1.png" alt="">
+                        </figure>
+                        <p class="text-xl font-medium text-darkText">Strawberry</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <figure class="">
+                            <img class="w-[112px] h-[112px]" src="./img/fruit2.png" alt="">
+                        </figure>
+                        <p class="text-xl font-medium text-darkText">Orange</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <figure class="">
+                            <img class="w-[154px] h-[112px]" src="./img/fruit3.png" alt="">
+                        </figure>
+                        <p class="text-xl font-medium text-darkText">Mango</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <figure class="">
+                            <img class="w-[146px] h-[112px]" src="./img/fruit4.png" alt="">
+                        </figure>
+                        <p class="text-xl font-medium text-darkText">Strawberry</p>
+                    </div>
+                    <div class="flex flex-col items-center justify-center text-center">
+                        <figure class="">
+                            <img class="w-[140px] h-[112px]" src="./img/fruit5.png" alt="">
+                        </figure>
+                        <p class="text-xl font-medium text-darkText">Mango</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section class="py-28">
+
+        </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 </body>
 
 </html>
