@@ -310,7 +310,251 @@
         </section>
 
         <section class="py-28">
+            <div class="container mx-auto">
+                <div class="flex gap-6 flex-col lg:flex-row justify-center lg:justify-between items-center">
+                    <div class="flex-1 text-center lg:text-left md:px-8 lg:px-0">
+                        <h1 class="text-4xl md:text-5xl font-extrabold text-darkColor">Deal of the day</h1>
+                        <p
+                            class="text-base text-center lg:text-left font-medium leading-[26px] text-darkLight mt-2 lg:pr-10">
+                            Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                            Latin literature from 45 BC, making it over 2000 years old.</p>
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex lg:justify-end">
+                            <div class="flex gap-3 lg:gap-6">
+                                <div class="flex flex-col items-center justify-center">
+                                    <h2 class="text-4xl md:text-5xl font-extrabold text-darkColor">29</h2>
+                                    <p class="text-base text-medium leading-[26px] text-darkLight">Days</p>
+                                </div>
+                                <p class="text-2xl font-bold">:</p>
+                                <div class="flex flex-col items-center justify-center">
+                                    <h2 class="text-4xl md:text-5xl font-extrabold text-darkColor">15</h2>
+                                    <p class="text-base text-medium leading-[26px] text-darkLight">Hours</p>
+                                </div>
+                                <p class="text-2xl font-bold">:</p>
+                                <div class="flex flex-col items-center justify-center">
+                                    <h2 class="text-4xl md:text-5xl font-extrabold text-darkColor">25</h2>
+                                    <p class="text-base text-medium leading-[26px] text-darkLight">Minutes</p>
+                                </div>
+                                <p class="text-2xl font-bold">:</p>
+                                <div class="flex flex-col items-center justify-center">
+                                    <h2 class="text-4xl md:text-5xl font-extrabold text-darkColor">08</h2>
+                                    <p class="text-base text-medium leading-[26px] text-darkLight">Seconds</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+                    <div class="flex flex-col justify-center text-center border rounded-lg px-8 py-10">
+                        <figure class="flex justify-center">
+                            <img class="w-[130px] h-[130px]" src="./img/fruit6.png" alt="">
+                        </figure>
+                        <h4 class="font-bold text-2xl text-darkColor mb-6 mt-8">12.90$ - 18.85$</h4>
+                        <hr class="mb-4">
+                        <p class="mb-4 text-base text-darkLight font-medium">Apples</p>
+                        <div class="rating mx-auto mb-4">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
 
+                        <button class="btn inline-block normal-case 
+                        bg-transparent border-0 hover:bg-transparent 
+                        text-themeRedColor" onclick="my_modal_5.showModal()">Details</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <!-- <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p> -->
+                                <div class="flex flex-col justify-center text-center lg:px-6 lg:py-10">
+                                    <figure class="flex justify-center">
+                                        <img class="w-[130px] h-[130px]" src="./img/fruit6.png" alt="">
+                                    </figure>
+                                    <h4 class="font-bold text-2xl text-darkColor md:mb-3 md:mt-3">Apples</h4>
+                                    <p class="mb-4 text-base text-darkLight font-medium">Professional employees are
+                                        there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mx-auto lg:mb-4">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action mx-auto">
+                                        <div class="flex justify-center gap-2">
+                                            <button
+                                                class="btn border-themeRedColor bg-transparent hover:bg-transparent hover:border-themeRedColor normal-case text-themeRedColor">Close</button>
+                                            <button
+                                                class="btn bg-themeRedColor normal-case text-white hover:bg-themeRedColor">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </dialog>
+                    </div>
+                    <div class="flex flex-col justify-center text-center border rounded-lg px-8 py-10">
+                        <figure class="flex justify-center">
+                            <img class="w-[130px] h-[130px]" src="./img/fruit7.png" alt="">
+                        </figure>
+                        <h4 class="font-bold text-2xl text-darkColor mb-6 mt-8">12.90$ - 18.85$</h4>
+                        <hr class="mb-4">
+                        <p class="mb-4 text-base text-darkLight font-medium">Orange</p>
+                        <div class="rating mx-auto mb-4">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+
+                        <button class="btn inline-block normal-case 
+                        bg-transparent border-0 hover:bg-transparent 
+                        text-themeRedColor" onclick="my_modal_6.showModal()">Details</button>
+                        <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <!-- <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p> -->
+                                <div class="flex flex-col justify-center text-center lg:px-6 lg:py-10">
+                                    <figure class="flex justify-center">
+                                        <img class="w-[130px] h-[130px]" src="./img/fruit7.png" alt="">
+                                    </figure>
+                                    <h4 class="font-bold text-2xl text-darkColor md:mb-3 md:mt-3">Orange</h4>
+                                    <p class="mb-4 text-base text-darkLight font-medium">Professional employees are
+                                        there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mx-auto lg:mb-4">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action mx-auto">
+                                        <div class="flex justify-center gap-2">
+                                            <button
+                                                class="btn border-themeRedColor bg-transparent hover:bg-transparent hover:border-themeRedColor normal-case text-themeRedColor">Close</button>
+                                            <button
+                                                class="btn bg-themeRedColor normal-case text-white hover:bg-themeRedColor">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </dialog>
+                    </div>
+                    <div class="flex flex-col justify-center text-center border rounded-lg px-8 py-10">
+                        <figure class="flex justify-center">
+                            <img class="w-[130px] h-[130px]" src="./img/fruit8.png" alt="">
+                        </figure>
+                        <h4 class="font-bold text-2xl text-darkColor mb-6 mt-8">12.90$ - 18.85$</h4>
+                        <hr class="mb-4">
+                        <p class="mb-4 text-base text-darkLight font-medium">Red Dragon</p>
+                        <div class="rating mx-auto lg:mb-4">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        </div>
+
+                        <button class="btn inline-block normal-case 
+                        bg-transparent border-0 hover:bg-transparent 
+                        text-themeRedColor" onclick="my_modal_7.showModal()">Details</button>
+                        <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <!-- <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p> -->
+                                <div class="flex flex-col justify-center text-center lg:px-6 lg:py-10">
+                                    <figure class="flex justify-center">
+                                        <img class="w-[130px] h-[130px]" src="./img/fruit8.png" alt="">
+                                    </figure>
+                                    <h4 class="font-bold text-2xl text-darkColor md:mb-3 md:mt-3">Red Dragon</h4>
+                                    <p class="mb-4 text-base text-darkLight font-medium">Professional employees are
+                                        there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mx-auto lg:mb-4">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action mx-auto">
+                                        <div class="flex justify-center gap-2">
+                                            <button
+                                                class="btn border-themeRedColor bg-transparent hover:bg-transparent hover:border-themeRedColor normal-case text-themeRedColor">Close</button>
+                                            <button
+                                                class="btn bg-themeRedColor normal-case text-white hover:bg-themeRedColor">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </dialog>
+                    </div>
+                    <div class="flex flex-col justify-center text-center border rounded-lg lg:px-8 lg:py-10">
+                        <figure class="flex justify-center">
+                            <img class="w-[130px] h-[130px]" src="./img/fruit9.png" alt="">
+                        </figure>
+                        <h4 class="font-bold text-2xl text-darkColor mb-6 mt-8">12.90$ - 18.85$</h4>
+                        <hr class="mb-4">
+                        <p class="mb-4 text-base text-darkLight font-medium">Banana</p>
+                        <div class="rating mx-auto mb-4">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        </div>
+
+                        <button class="btn inline-block normal-case 
+                        bg-transparent border-0 hover:bg-transparent 
+                        text-themeRedColor" onclick="my_modal_8.showModal()">Details</button>
+                        <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                            <form method="dialog" class="modal-box">
+                                <!-- <h3 class="font-bold text-lg">Hello!</h3>
+                                <p class="py-4">Press ESC key or click the button below to close</p> -->
+                                <div class="flex flex-col justify-center text-center lg:px-6 lg:py-10">
+                                    <figure class="flex justify-center">
+                                        <img class="w-[130px] h-[130px]" src="./img/fruit9.png" alt="">
+                                    </figure>
+                                    <h4 class="font-bold text-2xl text-darkColor md:mb-3 md:mt-3">Banana</h4>
+                                    <p class="mb-4 text-base text-darkLight font-medium">Professional employees are
+                                        there for you to pick the most amazing and fresh fruits.</p>
+                                    <div class="rating mx-auto lg:mb-4">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action mx-auto">
+                                        <div class="flex justify-center gap-2">
+                                            <button
+                                                class="btn border-themeRedColor bg-transparent hover:bg-transparent hover:border-themeRedColor normal-case text-themeRedColor">Close</button>
+                                            <button
+                                                class="btn bg-themeRedColor normal-case text-white hover:bg-themeRedColor">Buy
+                                                Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-8">
+                    <button class="btn bg-themeRedColor normal-case text-white hover:bg-themeRedColor">Shop All</button>
+                </div>
+            </div>
         </section>
     </main>
 
